@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
           resources :users
           root 'static_pages#home'
+          get 'search'  => 'static_pages#search'
           get 'help'    => 'static_pages#help'
           get 'about'   => 'static_pages#about'
           get 'contact' => 'static_pages#contact'

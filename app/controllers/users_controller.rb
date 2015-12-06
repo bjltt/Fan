@@ -30,8 +30,8 @@ end
                                   :password, :password_confirmation)
         @user = User.new(secure_params)
         if @user.save
-          remember @user       #  NEW LINE
-          flash[:success] = "Welcome to Easy Job!"    # NEW LINE
+          remember @user      
+          flash[:success] = "Welcome to Easy Job!"   
           redirect_to @user  
         else
           render 'new'

@@ -15,10 +15,10 @@ Rails.application.routes.draw do
           get    'login'   => 'sessions#new'
           post   'login'   => 'sessions#create'
           delete 'logout'  => 'sessions#destroy'
-get'catering'=>'caterings#index'
-get'automotive'=>'automotives#index'
-get'it'=>'its#index'
-get'finance'=>'finances#index'
+get 'catering'=>'caterings#index'
+get 'automotive'=>'automotives#index'
+get 'it'=>'its#index'
+get 'finance'=>'finances#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

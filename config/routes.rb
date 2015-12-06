@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
           resources :users
+          resources :automotives
+          resources :caterings
+          resources :finances
+          resources :its
+
           root 'static_pages#home'
           get 'search'  => 'static_pages#search'
           get 'help'    => 'static_pages#help'
@@ -10,7 +15,10 @@ Rails.application.routes.draw do
           get    'login'   => 'sessions#new'
           post   'login'   => 'sessions#create'
           delete 'logout'  => 'sessions#destroy'
-
+get'catering'=>'caterings#index'
+get'automotive'=>'automotives#index'
+get'it'=>'its#index'
+get'finance'=>'finances#index'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

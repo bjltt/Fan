@@ -230,3 +230,19 @@
         color: $state-danger-text;
       }
     }
+
+    /* Users index */
+
+    .users {
+    list-style: none;
+    margin: 0;
+    li {
+    overflow: auto;
+    padding: 10px 0;
+   
+    &:last-child  {
+      border: 0;
+      padding-top: 0;
+    }
+    }
+    }
